@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+.body-wideMargin {
+  margin: 50px;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: Roboto;
+}
+button{
+  padding:5px;
+}
+
+
+ol ol {
+  margin-left: 0.9em;
+}
+
+ol li {
+  line-height: 1.5;
+}
+
+
+.table {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-collapse: collapse;
+	border-spacing: 2px;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+}
+#footer-content {
+  background: rgb(211, 89, 33);
+  border-radius: 10px;
+  padding: 40px;
+}
+body {
+  background-color: burlywood;
+  margin: 0vmax;
+}
+.dropbtn {
+  background-color: rgb(211, 89, 33);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.dropbtn2 {
+  background-color: burlywood;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.dropbtn2:hover, .dropbtn2:focus {
+  background-color: #3e8e41;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+.menu{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  float: left;
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(211, 89, 33);
+}
+

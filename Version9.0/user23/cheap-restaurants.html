@@ -1,0 +1,171 @@
+<html lang="en">
+<!--Version 6.0 
+	Name:
+	Date Completed:
+    -->
+
+<head>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <title>Best Restaurants</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="weather/style.css">
+    <style>
+        
+
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: rgb(211, 89, 33);
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .header {
+            font-size: 3vmax;
+        }
+
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: rgba(255, 0, 0, 0.20);
+        }
+
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #dbdfe5;
+            margin-bottom: 15px;
+        }
+
+        .demo-content.bg-alt {
+            background: #abb1b8;
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+
+        .btn-primary:not(:disabled):not(.disabled).active,
+        .btn-primary:not(:disabled):not(.disabled):active,
+        .show>.btn-primary.dropdown-toggle {
+            color: rgb(53, 147, 170);
+            background-color: rgb(212, 28, 28);
+            border-color: #117a8b;
+        }
+
+        #apple {
+            width: 40px;
+        }
+
+        .site-footer {
+            font-size: 13px;
+        }
+       
+    </style>
+
+</head>
+
+<body>
+    <script>
+
+    </script>
+    <div>
+        <nav class="topnav" id="navbarCollapse">
+            <a href="index.html">Home</a>
+            <a href="best-restaurants.html">Best Restaurants in the world</a>
+            <a href="cheap-restaurants.html" class="active">Cheap Restaurants</a>
+            <a href ="http://localhost:8080/WebDev2/Version9.0/user23/testing.php">Restaurant recipes</a>
+        </nav>
+    </div>
+
+    <h1>Cheap Restaurants to eat at in Shakopee</h1>
+    <div class="container mt-3">
+        <!--Row with two equal columns-->
+        <div class="row">
+            <div class="col-md-6">
+                <p class="header"><strong>Coffee Ta Cream</strong></p>
+                <img src="../user23/images/CTC.jpeg">
+            </div>
+            <div class="col-md-6">
+                <p class="header"><strong>New Dragon Cafe Inc</strong></p>
+                <img src="../user23/images/Dragon.jpeg">
+            </div>
+        </div>
+        <!--Row with two columns divided in 1:2 ratio-->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="list-group">
+                    <p class="header"><strong>Culvers</strong></p>
+                    <img src="../user23/images/Culvers.jpeg">
+                </div>
+            </div>
+            <div class="row">
+                <h2>View more</h2>
+                <p>Click on the button to see more Cheap Restaurants</p>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View
+                    more</button>
+                <div id="demo" class="collapse">
+                    <a href="https://www.qdoba.com/" target="blank" class="header">Qudoba Mexican Eats</a>
+                    
+                    <img src="../user23/images/Qdoba.jpeg">
+                </div>
+
+        </div>
+        <footer>
+        <div id="footer-content">
+            <div class="form-group row">
+                <form action="confirmation.html">
+                <h4 class="center"><label class="col-sml-10 col-form-label d-block"> Sign up with us today and get the know on the best
+                            restaurants</label></h4>
+                    <label for="inputPassword" class="col-sm-4 col-form-label">Username</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Example@example.com"
+                            required="">
+                    </div>
+            </div>
+         
+         
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+                </div>
+            </div>
+        </div>
+         </div>
+    </div>
+    </footer>
+</body>
+
+</html>

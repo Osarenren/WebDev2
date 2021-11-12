@@ -1,0 +1,260 @@
+<html lang="en">
+<!--Version 6.0 
+	Name:
+	Date Completed:
+    -->
+
+<head>
+  <title>Best Restaurants</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <!--CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="weather/style.css">
+
+  <style type="text/css">
+    /* Add a black background color to the top navigation */
+    .topnav {
+      background-color: rgb(211, 89, 33);
+      overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    
+
+    menu {
+      margin: 0;
+      padding: 0;
+    }
+
+    .wideMargin {
+      margin: 15px;
+    }
+
+    footer {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    #rainbow {
+      width: 100%;
+    }
+
+    a {
+      color: black;
+    }
+
+    .card-container {
+      display: inline-block;
+      margin: 3%;
+      perspective: 1000px;
+    }
+
+    .flipper {
+      position: relative;
+      transition: 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .front,
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 255px;
+      height: 320px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      backface-visibility: hidden;
+    }
+
+    .front {
+      z-index: 2;
+    }
+
+    .back {
+      transform: rotateY(180deg);
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .card-container,
+    .front,
+    .back {
+      width: 250px;
+      height: 320px;
+    }
+
+    .card-container:hover .flipper {
+      transform: rotateY(190deg);
+    }
+
+    caption,
+    .back h1 {
+      font-family: "Orbitron", sans-serif;
+      font-size: 1.7em;
+      padding: 10px 10px 0 10px;
+      margin: 0;
+      text-align: center;
+    }
+
+    p.caption {
+      position: absolute;
+      bottom: 1vh;
+      font-size: 2.5em;
+    }
+
+    .description {
+      font-size: 0.9em;
+      padding: 0 20px 20px 20px;
+      text-align: left;
+    }
+
+    .descriptions-2 {
+      font-size: 2em;
+      text-align: center;
+      padding: 20px;
+      background-color: rgb(211, 89, 33);
+      display: inline-block;
+      border: 4px solid #5D6063;
+    }
+  </style>
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <nav class="topnav" id="navbarCollapse">
+      <a href="index.html">Home</a>
+      <a href="best-restaurants.html" class="active">Best Restaurants in the world</a>
+      <a href="cheap-restaurants.html">Cheap Restaurants</a>
+      <a href ="http://localhost:8080/WebDev2/Version9.0/user23/testing.php"> Restaurant recipes</a>
+    </nav>
+  </div>
+
+  <div class="center">
+    <p class="descriptions-2">
+      <strong>Hover over the images to get the descriptions</strong>
+    </p>
+  </div>
+  <div id="gallery">
+    <div class="card-container">
+      <div class="flipper">
+        <div class="front">
+          <img src="../user23/images/Noma.jpeg" alt="RAM Stick" style="height:13vmax;;">
+          <p class="caption"><strong>1. Noma</strong></p>
+        </div>
+        <div class="back">
+          <a href="https://www.theworlds50best.com/the-list/1-10/Noma.html" target="_blank">
+            <h1>Noma Restaurant</h1>
+          </a>
+          <p class="description">No trip to Noma is ever the same, with Redzepi and team constantly foraging for
+            unexpected ingredients and turning them into beautiful plates.
+            Highlights from previous seasons include a groundbreaking vegetarian celeriac shawarma, a duck dish of leg,
+            brain and heart served with claw, feather and beak.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="flipper">
+        <div class="front">
+          <img src="../user23/images/Geranium.jpeg" alt="RAM Stick" style="height:13vmax;;">
+          <p class="caption"><strong>2. Geranium</strong></p>
+        </div>
+        <div class="back">
+          <a href="https://www.theworlds50best.com/the-list/1-10/Geranium.html" target="_blank">
+            <h1>Geranium rest.</h1>
+          </a>
+          <p class="description">There are arguably no better chefs in the world than Kofoed at applying beauty to food.
+            He has an intuitive ability to put together truly stunning dishes that make the most of colour,
+            empty space and accurate volume of ingredients, creating synergy between flavour, aestheticism and a sense
+            of flow that runs throughout the menu.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="flipper">
+        <div class="front">
+          <img src="../user23/images/Asador.jpeg" alt="NVIDIA GPU">
+          <p class="caption"><strong>3. Asador Etxebarri</strong></p>
+        </div>
+        <div class="back">
+          <a href="https://www.theworlds50best.com/the-list/1-10/Asador-Etxebarri.html" target="_blank">
+            <h1>Asador Etxebarri</h1>
+          </a>
+          <p class="description">The restaurant respects the intrinsic natural flavours of local produce and delicately
+            urges each ingredient to show its potential: house-made chorizo, salted anchovies, buffalo cheese, the
+            freshest prawns from Palamos, tender beef chops. Even the
+            desserts – such as reduced milk ice cream with raspberries – are kissed with at least a suggestion of smoke.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="flipper">
+        <div class="front">
+          <img src="../user23/images/Central.jpeg" alt="ATX_Motherboard">
+          <p class="caption"><strong>4. Central</strong></p>
+        </div>
+        <div class="back">
+          <a href="https://www.theworlds50best.com/the-list/1-10/Central.html" target="_blank">
+            <h1>Central Restaurant</h1>
+          </a>
+          <p class="description">
+            The tasting menu features the finest food that land and sea have to offer: scallops, squid and clams come
+            fresh from the coast and the Amazon, while the Sacred Valley offers up pork belly and goat’s neck.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+    function Showvideo() {
+        var x = document.getElementById('demo');
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+  } else {
+    x.style.visibility = 'hidden';
+  }
+}
+</script>
+ 
+  <footer id="footer-content">
+    <button onclick="Showvideo()" class="dropbtn2"> Click to see a video on the Best Restraunt </button>
+    <div id ="demo" style="visibility:hidden;">
+      <p class="descriptions-2">The 1. Best Restaurant</p>
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/RPy41Sie8Os" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </footer>
+</body>
+
+</html>
